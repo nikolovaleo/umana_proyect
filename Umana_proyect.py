@@ -2,14 +2,25 @@ import pandas as pd
 file = "test.xlsx" 
 data = pd.ExcelFile(file)
 fieldbus_device_sheet = data.parse("FieldbusDevice")
+names_sheets = data.sheet_names
+fieldbus_sheets = []
 
-column_names = []
-for col in fieldbus_device_sheet.columns:
-    column_names.append(col)
-#print(column_names)
+for sheet in names_sheets:
+    if 'Fieldbus' in sheet and 'OvationFieldbusPort' not in sheet:
+        fieldbus_sheets.append(sheet)
 
-device_df = pd.DataFrame(columns = column_names)
-print(data.sheet_names)
+first_device =  "17HPS_LIT_030A" #fieldbus_device_sheet["ObjectName"][0]
+for data_sheet in fieldbus_sheets:
+    if (first_device == fieldbus_sheets["ParName_11"]) or (first_device == fieldbus_sheets["ObjectName"]): 
+
+#column_names = []
+#for sheet in fieldbus_names:
+#    for col in sheet.columns:
+#        column_names.append(col)
+
+
+#device_df = pd.DataFrame(columns = column_names)
+#print(data.sheet_names)
 
 
 
