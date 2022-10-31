@@ -1,9 +1,14 @@
 import pandas as pd 
 file = "test.xlsx" 
 data = pd.ExcelFile(file)
-drop_sheet = data.parse("Drop")
-unit_sheet = data.parse("Unit")
+fieldbus_device_sheet = data.parse("FieldbusDevice")
 
+column_names = []
+for col in fieldbus_device_sheet.columns:
+    column_names.append(col)
+#print(column_names)
+
+device_df = pd.DataFrame(columns = column_names)
 print(data.sheet_names)
 
 
