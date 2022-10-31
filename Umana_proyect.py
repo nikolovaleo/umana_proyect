@@ -6,13 +6,19 @@ names_sheets = data.sheet_names
 fieldbus_sheets = []
 
 for sheet in names_sheets:
-    if 'Fieldbus' in sheet and 'OvationFieldbusPort' not in sheet:
+    if 'Fieldbus' in sheet and 'OvationFieldbusPort' not in sheet and 'FieldbusDevice' not in sheet:
         fieldbus_sheets.append(sheet)
 
 first_device =  "17HPS_LIT_030A" #fieldbus_device_sheet["ObjectName"][0]
-for data_sheet in fieldbus_sheets:
-    if (first_device == fieldbus_sheets["ParName_11"]) or (first_device == fieldbus_sheets["ObjectName"]): 
+#for data_sheet in fieldbus_sheets:
 
+new = data.parse("FieldbusDevice")["ObjectName"].isin([first_device])
+data1 = data.parse("FieldbusDevice")
+# displaying data with gender = male only
+
+
+
+print(data1[new])
 #column_names = []
 #for sheet in fieldbus_names:
 #    for col in sheet.columns:
