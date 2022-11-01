@@ -4,10 +4,15 @@ data = pd.ExcelFile(file)
 fieldbus_device_sheet = data.parse("FieldbusDevice")
 names_sheets = data.sheet_names
 fieldbus_sheets = []
-
+# Ciclo que toma las hojas que contienen la palabra "Fieldbus" en su nombre y las guarda en la lista vacia llamada Fieldbus_sheets
 for sheet in names_sheets:
     if ('Fieldbus' in sheet) and ('OvationFieldbusPort' not in sheet) and ('FieldbusDevice' not in sheet):
         fieldbus_sheets.append(sheet)
+
+
+
+
+
 
 first_device =  "17HPS_LIT_030A" #fieldbus_device_sheet["ObjectName"][0]
 #for data_sheet in fieldbus_sheets:
@@ -27,10 +32,6 @@ archivo.to_excel("output.xlsx", sheet_name="FieldbusDevice")
 
 #device_df = pd.DataFrame(columns = column_names)
 #print(data.sheet_names)
-
-
-
-
 
 
 # Para ver el contenido de una de las hojas se utiliza la siguiente sintaxis: X_sheet = data.parse("Nombre de la hoja en excel")
