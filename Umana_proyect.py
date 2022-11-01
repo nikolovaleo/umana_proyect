@@ -27,7 +27,7 @@ write = pd.ExcelWriter(f'{first_device}.xlsx', engine='xlsxwriter')
 
 
 archivo1 = data1[new1]
-archivo1.to_excel(write, sheet_name="FieldbusDevice")
+archivo1.to_excel(write, sheet_name="FieldbusDevice", index=False)
 
 
 for f_sheet in fieldbus_sheets:
