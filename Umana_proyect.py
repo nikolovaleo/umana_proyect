@@ -1,6 +1,4 @@
 import pandas as pd 
-#from xlsxwriter import Workbook
-#import openpyxl
 file = "test.xlsx" 
 data = pd.ExcelFile(file)
 fieldbus_device_sheet = data.parse("FieldbusDevice")
@@ -11,13 +9,8 @@ for sheet in names_sheets:
     if ('Fieldbus' in sheet) and ('OvationFieldbusPort' not in sheet) and ('FieldbusDevice' not in sheet) and ("FieldbusVCR" not in sheet):
         fieldbus_sheets.append(sheet)
 
-
-print(fieldbus_sheets)
-
-#first_device =  "17HPS_LIT_030A" #fieldbus_device_sheet["ObjectName"][0]
 FieldbusDevice_sheet = data.parse("FieldbusDevice")
-
-#Ciclo que itera sobre los nombres de los devices 
+#Ciclo que itera sobre los nombres de los devices y crea las hojas para cada device
 for i, device_name in enumerate(FieldbusDevice_sheet["ObjectName"]):
     #Verifica si device_name esta en la columna de ObjectName en la hoja de FieldbusDevice
     new1 = data.parse("FieldbusDevice")["ObjectName"].isin([device_name])
@@ -27,28 +20,13 @@ for i, device_name in enumerate(FieldbusDevice_sheet["ObjectName"]):
     archivo1 = data1[new1]
     archivo1.to_excel(write, sheet_name="FieldbusDevice", index=False)
 
-
+    #Ciclo que itera sobre las hojas de Fieldbus y crea los tabs que contienen la informacion del device en las nuevas hojas de excel
     for f_sheet in fieldbus_sheets:
         new2 = data.parse(f_sheet)["ParName_11"].isin([device_name])
         data2 = data.parse(f_sheet)
         print(data2[new2])
         archivo2 = data2[new2]
-    
         archivo2.to_excel(write, sheet_name = f_sheet, index = False)
 
     write.save()
 
-#column_names = []
-#for sheet in fieldbus_names:
-#    for col in sheet.columns:
-#        column_names.append(col)
-
-
-#device_df = pd.DataFrame(columns = column_names)
-#print(data.sheet_names)
-
-
-# Para ver el contenido de una de las hojas se utiliza la siguiente sintaxis: X_sheet = data.parse("Nombre de la hoja en excel")
-# Para accesar a una columna de una hoja en especifico: X_sheet["Nombre de la columna en la hoja"]
-# Para accesar a un elemento de una celda en una hoja y columna especifica: X_sheet["Nombre de la columna"][posicion numerada desde 0 hasta n]
-# Para conocer el tamano de una columna en especifico X_sheet["Columna"].size
