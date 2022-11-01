@@ -1,0 +1,331 @@
+OVPT_FORMAT=2.1
+(TYPE="System" NAME="Ovation"
+ (TYPE="Network" NAME="NET0"
+  (TYPE="Unit" NAME="UNIT1"
+   (TYPE="Drop" NAME="DROP1/DROP51"
+    (TYPE="IoDevice" NAME="I/O Device 0 IOIC"
+     (TYPE="IoDevice" NAME="I/O Interface 2 LocalOvation"
+      (TYPE="Branch" NAME="Branch 1"
+       (TYPE="RSlot" NAME="Slot 4"
+        (TYPE="RModule" NAME="5X00301G01/5X00327G01"
+         (TYPE="OvationFieldbusPort" NAME="P01"
+          (TYPE="FieldbusDevice" NAME="17PWS_PDIT_651"
+           [FB_DEVICE_NAME="17PWS_PDIT_651"
+           FB_DEV_MFG="4433"
+           FB_DEV_TYPE="8273"
+           FB_DEV_REV="1"
+           FB_STS_POINT_NAME="D001P2B1L4P01D03"
+           PLANT_WEB_ALERT_ENA="1"
+           PWEB_ADVISE_ENA="1"
+           PWEB_FAIL_ENA="1"
+           PWEB_MAINT_ENA="1"
+           PWEB_COMM_ENA="1"
+           PWEB_ABNORM_ENA="1"
+           PWEB_ADVISE_ALARM_PRIORITY="1"
+           PWEB_MAINT_ALARM_PRIORITY="1"
+           PWEB_COMM_ALARM_PRIORITY="1"
+           FB_DEVICE_ID="0011512051103013230250-450002944"
+           FB_DEVICE_NODE_ADDRESS="25"
+           FB_BKUP_LM_ENABLED="NO"
+           FB_FFDEV_CKSUM="2007179449"
+           FB_FFHDR_CKSUM="740200564"
+           FB_DALM_CKSUM="0"
+           FB_FALM_CKSUM="2982694914"
+           FB_FALMOV_CKSUM="0"]
+          )
+         )
+        )
+       )
+      )
+     )
+    )
+   )
+  )
+ )
+)
+(TYPE="System" NAME="Ovation"
+ (TYPE="Network" NAME="NET0"
+  (TYPE="Unit" NAME="UNIT1"
+   (TYPE="Drop" NAME="DROP1/DROP51"
+    (TYPE="IoDevice" NAME="I/O Device 0 IOIC"
+     (TYPE="IoDevice" NAME="I/O Interface 2 LocalOvation"
+      (TYPE="Branch" NAME="Branch 1"
+       (TYPE="RSlot" NAME="Slot 4"
+        (TYPE="RModule" NAME="5X00301G01/5X00327G01"
+         (TYPE="OvationFieldbusPort" NAME="P01"
+          (TYPE="FieldbusDevice" NAME="17PWS_PDIT_651"
+           (TYPE="FieldbusARTHMFunctionBlock" NAME="FFARTHM4"
+            [FB_FBLOCK_INDEX="11800"
+            FB_FBLOCK_NAME="FFARTHM4"
+            FB_FB_TYPE="FFARTHM"]
+           )
+          )
+         )
+        )
+       )
+      )
+     )
+    )
+   )
+  )
+ )
+)
+(TYPE="System" NAME="Ovation"
+ (TYPE="Network" NAME="NET0"
+  (TYPE="Unit" NAME="UNIT1"
+   (TYPE="Drop" NAME="DROP1/DROP51"
+    (TYPE="IoDevice" NAME="I/O Device 0 IOIC"
+     (TYPE="IoDevice" NAME="I/O Interface 2 LocalOvation"
+      (TYPE="Branch" NAME="Branch 1"
+       (TYPE="RSlot" NAME="Slot 4"
+        (TYPE="RModule" NAME="5X00301G01/5X00327G01"
+         (TYPE="OvationFieldbusPort" NAME="P01"
+          (TYPE="FieldbusDevice" NAME="17PWS_PDIT_651"
+           (TYPE="FieldbusSGCRFunctionBlock" NAME="FFSGCR4"
+            [FB_FBLOCK_INDEX="11500"
+            FB_FBLOCK_NAME="FFSGCR4"
+            FB_FB_TYPE="FFSGCR"]
+           )
+          )
+         )
+        )
+       )
+      )
+     )
+    )
+   )
+  )
+ )
+)
+(TYPE="System" NAME="Ovation"
+ (TYPE="Network" NAME="NET0"
+  (TYPE="Unit" NAME="UNIT1"
+   (TYPE="Drop" NAME="DROP1/DROP51"
+    (TYPE="IoDevice" NAME="I/O Device 0 IOIC"
+     (TYPE="IoDevice" NAME="I/O Interface 2 LocalOvation"
+      (TYPE="Branch" NAME="Branch 1"
+       (TYPE="RSlot" NAME="Slot 4"
+        (TYPE="RModule" NAME="5X00301G01/5X00327G01"
+         (TYPE="OvationFieldbusPort" NAME="P01"
+          (TYPE="FieldbusDevice" NAME="17PWS_PDIT_651"
+           (TYPE="FieldbusINTFunctionBlock" NAME="FFINT5"
+            [FB_FBLOCK_INDEX="12000"
+            FB_FBLOCK_NAME="FFINT5"
+            FB_FB_TYPE="FFINT"]
+           )
+          )
+         )
+        )
+       )
+      )
+     )
+    )
+   )
+  )
+ )
+)
+(TYPE="System" NAME="Ovation"
+ (TYPE="Network" NAME="NET0"
+  (TYPE="Unit" NAME="UNIT1"
+   (TYPE="Drop" NAME="DROP1/DROP51"
+    (TYPE="IoDevice" NAME="I/O Device 0 IOIC"
+     (TYPE="IoDevice" NAME="I/O Interface 2 LocalOvation"
+      (TYPE="Branch" NAME="Branch 1"
+       (TYPE="RSlot" NAME="Slot 4"
+        (TYPE="RModule" NAME="5X00301G01/5X00327G01"
+         (TYPE="OvationFieldbusPort" NAME="P01"
+          (TYPE="FieldbusDevice" NAME="17PWS_PDIT_651"
+           (TYPE="FieldbusISELFunctionBlock" NAME="FFISEL8"
+            [FB_FBLOCK_INDEX="11400"
+            FB_FBLOCK_NAME="FFISEL8"
+            FB_FB_TYPE="FFISEL"]
+           )
+          )
+         )
+        )
+       )
+      )
+     )
+    )
+   )
+  )
+ )
+)
+(TYPE="System" NAME="Ovation"
+ (TYPE="Network" NAME="NET0"
+  (TYPE="Unit" NAME="UNIT1"
+   (TYPE="Drop" NAME="DROP1/DROP51"
+    (TYPE="IoDevice" NAME="I/O Device 0 IOIC"
+     (TYPE="IoDevice" NAME="I/O Interface 2 LocalOvation"
+      (TYPE="Branch" NAME="Branch 1"
+       (TYPE="RSlot" NAME="Slot 4"
+        (TYPE="RModule" NAME="5X00301G01/5X00327G01"
+         (TYPE="OvationFieldbusPort" NAME="P01"
+          (TYPE="FieldbusDevice" NAME="17PWS_PDIT_651"
+           (TYPE="FieldbusPIDFunctionBlock" NAME="FFPID14"
+            [FB_FBLOCK_INDEX="10000"
+            FB_FBLOCK_NAME="FFPID14"
+            FB_FB_TYPE="FFPID"]
+           )
+          )
+         )
+        )
+       )
+      )
+     )
+    )
+   )
+  )
+ )
+)
+(TYPE="System" NAME="Ovation"
+ (TYPE="Network" NAME="NET0"
+  (TYPE="Unit" NAME="UNIT1"
+   (TYPE="Drop" NAME="DROP1/DROP51"
+    (TYPE="IoDevice" NAME="I/O Device 0 IOIC"
+     (TYPE="IoDevice" NAME="I/O Interface 2 LocalOvation"
+      (TYPE="Branch" NAME="Branch 1"
+       (TYPE="RSlot" NAME="Slot 4"
+        (TYPE="RModule" NAME="5X00301G01/5X00327G01"
+         (TYPE="OvationFieldbusPort" NAME="P01"
+          (TYPE="FieldbusDevice" NAME="17PWS_PDIT_651"
+           (TYPE="FieldbusAIFunctionBlock" NAME="FFAI31"
+            [FB_FBLOCK_INDEX="1000"
+            FB_FBLOCK_NAME="FFAI31"
+            FB_OUT_REF_NAME="17PWS_PDIT_651"
+            FB_ALG_POINT_NAME="OCB0064045"
+            FB_FB_TYPE="FFAI"
+            FB_ALG_START_TIME="30"]
+           )
+          )
+         )
+        )
+       )
+      )
+     )
+    )
+   )
+  )
+ )
+)
+(TYPE="System" NAME="Ovation"
+ (TYPE="Network" NAME="NET0"
+  (TYPE="Unit" NAME="UNIT1"
+   (TYPE="Drop" NAME="DROP1/DROP51"
+    (TYPE="IoDevice" NAME="I/O Device 0 IOIC"
+     (TYPE="IoDevice" NAME="I/O Interface 2 LocalOvation"
+      (TYPE="Branch" NAME="Branch 1"
+       (TYPE="RSlot" NAME="Slot 4"
+        (TYPE="RModule" NAME="5X00301G01/5X00327G01"
+         (TYPE="OvationFieldbusPort" NAME="P01"
+          (TYPE="FieldbusDevice" NAME="17PWS_PDIT_651"
+           (TYPE="FieldbusAIFunctionBlock" NAME="FFAI32"
+            [FB_FBLOCK_INDEX="1100"
+            FB_FBLOCK_NAME="FFAI32"
+            FB_FB_TYPE="FFAI"
+            FB_ALG_START_TIME="30"
+            FB_ITEM_0="AI2                             "
+            FB_ITEM_1="0"
+            FB_ITEM_2="2147615184"
+            FB_ITEM_3="1"
+            FB_ITEM_4="257"
+            FB_ITEM_5="513"
+            FB_ITEM_6="960"
+            FB_ITEM_7="32000"
+            FB_ITEM_8="41"
+            FB_ITEM_9="0"
+            FB_ITEM_10="30110"
+            FB_ITEM_11="1"
+            FB_ITEM_12="1"
+            FB_ITEM_13="9"
+            FB_ITEM_14="17PWS_PDIT_651                  "
+            FB_ITEM_15="0"
+            FB_ITEM_16="0"
+            FB_ITEM_17="Auto"
+            FB_ITEM_18="Auto"
+            FB_ITEM_19="25"
+            FB_ITEM_20="Auto"
+            FB_ITEM_21="Raw Value: 0"
+            FB_ITEM_22="128"
+            FB_ITEM_23="18.46094"
+            FB_ITEM_24="128"
+            FB_ITEM_25="18.46484"
+            FB_ITEM_26="128"
+            FB_ITEM_27="18.46094"
+            FB_ITEM_28="128"
+            FB_ITEM_29="18.46094"
+            FB_ITEM_30="1"
+            FB_ITEM_31="100"
+            FB_ITEM_32="0"
+            FB_ITEM_33="1001"
+            FB_ITEM_34="0"
+            FB_ITEM_35="2.5"
+            FB_ITEM_36="-2.5"
+            FB_ITEM_37="1590"
+            FB_ITEM_38="0"
+            FB_ITEM_39="0"
+            FB_ITEM_40="0"
+            FB_ITEM_41="0"
+            FB_ITEM_42="0"
+            FB_ITEM_43="2"
+            FB_ITEM_44="1"
+            FB_ITEM_45="0"
+            FB_ITEM_46="0"
+            FB_ITEM_47="128"
+            FB_ITEM_48="18.44922"
+            FB_ITEM_49="2"
+            FB_ITEM_50="1"
+            FB_ITEM_51="10 days 22:14:02.62456"
+            FB_ITEM_52="9"
+            FB_ITEM_53="0"
+            FB_ITEM_54="1"
+            FB_ITEM_55="1"
+            FB_ITEM_56="10 days 22:14:00.03903"
+            FB_ITEM_57="15"
+            FB_ITEM_58="0"
+            FB_ITEM_59="0"
+            FB_ITEM_60="0"
+            FB_ITEM_61="0"
+            FB_ITEM_62="0"
+            FB_ITEM_63="0"
+            FB_ITEM_64="0.5"
+            FB_ITEM_65="0"
+            FB_ITEM_66="1.#INF"
+            FB_ITEM_67="0"
+            FB_ITEM_68="1.#INF"
+            FB_ITEM_69="0"
+            FB_ITEM_70="-1.#INF"
+            FB_ITEM_71="0"
+            FB_ITEM_72="-1.#INF"
+            FB_ITEM_73="0"
+            FB_ITEM_74="0"
+            FB_ITEM_75="0 days 00:00:00.00000"
+            FB_ITEM_76="0"
+            FB_ITEM_77="0"
+            FB_ITEM_78="0"
+            FB_ITEM_79="0"
+            FB_ITEM_80="0 days 00:00:00.00000"
+            FB_ITEM_81="0"
+            FB_ITEM_82="0"
+            FB_ITEM_83="0"
+            FB_ITEM_84="0"
+            FB_ITEM_85="0 days 00:00:00.00000"
+            FB_ITEM_86="0"
+            FB_ITEM_87="0"
+            FB_ITEM_88="0"
+            FB_ITEM_89="0"
+            FB_ITEM_90="0 days 00:00:00.00000"
+            FB_ITEM_91="0"
+            FB_ITEM_92="0"]
+           )
+          )
+         )
+        )
+       )
+      )
+     )
+    )
+   )
+  )
+ )
+)

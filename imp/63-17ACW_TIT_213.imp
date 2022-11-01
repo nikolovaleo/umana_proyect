@@ -1,0 +1,295 @@
+OVPT_FORMAT=2.1
+(TYPE="System" NAME="Ovation"
+ (TYPE="Network" NAME="NET0"
+  (TYPE="Unit" NAME="UNIT1"
+   (TYPE="Drop" NAME="DROP1/DROP51"
+    (TYPE="IoDevice" NAME="I/O Device 0 IOIC"
+     (TYPE="IoDevice" NAME="I/O Interface 1 LocalOvation"
+      (TYPE="Branch" NAME="Branch 5"
+       (TYPE="RSlot" NAME="Slot 5"
+        (TYPE="RModule" NAME="5X00301G01/5X00327G01"
+         (TYPE="OvationFieldbusPort" NAME="P01"
+          (TYPE="FieldbusDevice" NAME="17ACW_TIT_213"
+           [FB_DEVICE_NAME="17ACW_TIT_213"
+           FB_DEV_MFG="4433"
+           FB_DEV_TYPE="12612"
+           FB_DEV_REV="3"
+           FB_STS_POINT_NAME="D001P1B5L5P01D05"
+           PLANT_WEB_ALERT_ENA="1"
+           PWEB_ADVISE_ENA="1"
+           PWEB_FAIL_ENA="1"
+           PWEB_MAINT_ENA="1"
+           PWEB_COMM_ENA="1"
+           PWEB_ABNORM_ENA="1"
+           PWEB_ADVISE_ALARM_PRIORITY="1"
+           PWEB_MAINT_ALARM_PRIORITY="1"
+           PWEB_COMM_ALARM_PRIORITY="1"
+           FB_DEVICE_ID="0011513144-EPM-TEMP-0x247DF095"
+           FB_DEVICE_NODE_ADDRESS="27"
+           FB_BKUP_LM_ENABLED="NO"
+           FB_FFDEV_CKSUM="2755224755"
+           FB_FFHDR_CKSUM="2464438094"
+           FB_DALM_CKSUM="0"
+           FB_FALM_CKSUM="2254754574"
+           FB_FALMOV_CKSUM="0"]
+          )
+         )
+        )
+       )
+      )
+     )
+    )
+   )
+  )
+ )
+)
+(TYPE="System" NAME="Ovation"
+ (TYPE="Network" NAME="NET0"
+  (TYPE="Unit" NAME="UNIT1"
+   (TYPE="Drop" NAME="DROP1/DROP51"
+    (TYPE="IoDevice" NAME="I/O Device 0 IOIC"
+     (TYPE="IoDevice" NAME="I/O Interface 1 LocalOvation"
+      (TYPE="Branch" NAME="Branch 5"
+       (TYPE="RSlot" NAME="Slot 5"
+        (TYPE="RModule" NAME="5X00301G01/5X00327G01"
+         (TYPE="OvationFieldbusPort" NAME="P01"
+          (TYPE="FieldbusDevice" NAME="17ACW_TIT_213"
+           (TYPE="FieldbusARTHMFunctionBlock" NAME="FFARTHM29"
+            [FB_FBLOCK_INDEX="2200"
+            FB_FBLOCK_NAME="FFARTHM29"
+            FB_FB_TYPE="FFARTHM"]
+           )
+          )
+         )
+        )
+       )
+      )
+     )
+    )
+   )
+  )
+ )
+)
+(TYPE="System" NAME="Ovation"
+ (TYPE="Network" NAME="NET0"
+  (TYPE="Unit" NAME="UNIT1"
+   (TYPE="Drop" NAME="DROP1/DROP51"
+    (TYPE="IoDevice" NAME="I/O Device 0 IOIC"
+     (TYPE="IoDevice" NAME="I/O Interface 1 LocalOvation"
+      (TYPE="Branch" NAME="Branch 5"
+       (TYPE="RSlot" NAME="Slot 5"
+        (TYPE="RModule" NAME="5X00301G01/5X00327G01"
+         (TYPE="OvationFieldbusPort" NAME="P01"
+          (TYPE="FieldbusDevice" NAME="17ACW_TIT_213"
+           (TYPE="FieldbusSGCRFunctionBlock" NAME="FFSGCR29"
+            [FB_FBLOCK_INDEX="2100"
+            FB_FBLOCK_NAME="FFSGCR29"
+            FB_FB_TYPE="FFSGCR"]
+           )
+          )
+         )
+        )
+       )
+      )
+     )
+    )
+   )
+  )
+ )
+)
+(TYPE="System" NAME="Ovation"
+ (TYPE="Network" NAME="NET0"
+  (TYPE="Unit" NAME="UNIT1"
+   (TYPE="Drop" NAME="DROP1/DROP51"
+    (TYPE="IoDevice" NAME="I/O Device 0 IOIC"
+     (TYPE="IoDevice" NAME="I/O Interface 1 LocalOvation"
+      (TYPE="Branch" NAME="Branch 5"
+       (TYPE="RSlot" NAME="Slot 5"
+        (TYPE="RModule" NAME="5X00301G01/5X00327G01"
+         (TYPE="OvationFieldbusPort" NAME="P01"
+          (TYPE="FieldbusDevice" NAME="17ACW_TIT_213"
+           (TYPE="FieldbusISELFunctionBlock" NAME="FFISEL68"
+            [FB_FBLOCK_INDEX="2000"
+            FB_FBLOCK_NAME="FFISEL68"
+            FB_FB_TYPE="FFISELX"]
+           )
+          )
+         )
+        )
+       )
+      )
+     )
+    )
+   )
+  )
+ )
+)
+(TYPE="System" NAME="Ovation"
+ (TYPE="Network" NAME="NET0"
+  (TYPE="Unit" NAME="UNIT1"
+   (TYPE="Drop" NAME="DROP1/DROP51"
+    (TYPE="IoDevice" NAME="I/O Device 0 IOIC"
+     (TYPE="IoDevice" NAME="I/O Interface 1 LocalOvation"
+      (TYPE="Branch" NAME="Branch 5"
+       (TYPE="RSlot" NAME="Slot 5"
+        (TYPE="RModule" NAME="5X00301G01/5X00327G01"
+         (TYPE="OvationFieldbusPort" NAME="P01"
+          (TYPE="FieldbusDevice" NAME="17ACW_TIT_213"
+           (TYPE="FieldbusPIDFunctionBlock" NAME="FFPID87"
+            [FB_FBLOCK_INDEX="1800"
+            FB_FBLOCK_NAME="FFPID87"
+            FB_FB_TYPE="FFPID"]
+           )
+          )
+         )
+        )
+       )
+      )
+     )
+    )
+   )
+  )
+ )
+)
+(TYPE="System" NAME="Ovation"
+ (TYPE="Network" NAME="NET0"
+  (TYPE="Unit" NAME="UNIT1"
+   (TYPE="Drop" NAME="DROP1/DROP51"
+    (TYPE="IoDevice" NAME="I/O Device 0 IOIC"
+     (TYPE="IoDevice" NAME="I/O Interface 1 LocalOvation"
+      (TYPE="Branch" NAME="Branch 5"
+       (TYPE="RSlot" NAME="Slot 5"
+        (TYPE="RModule" NAME="5X00301G01/5X00327G01"
+         (TYPE="OvationFieldbusPort" NAME="P01"
+          (TYPE="FieldbusDevice" NAME="17ACW_TIT_213"
+           (TYPE="FieldbusPIDFunctionBlock" NAME="FFPID128"
+            [FB_FBLOCK_INDEX="1900"
+            FB_FBLOCK_NAME="FFPID128"
+            FB_FB_TYPE="FFPID"]
+           )
+          )
+         )
+        )
+       )
+      )
+     )
+    )
+   )
+  )
+ )
+)
+(TYPE="System" NAME="Ovation"
+ (TYPE="Network" NAME="NET0"
+  (TYPE="Unit" NAME="UNIT1"
+   (TYPE="Drop" NAME="DROP1/DROP51"
+    (TYPE="IoDevice" NAME="I/O Device 0 IOIC"
+     (TYPE="IoDevice" NAME="I/O Interface 1 LocalOvation"
+      (TYPE="Branch" NAME="Branch 5"
+       (TYPE="RSlot" NAME="Slot 5"
+        (TYPE="RModule" NAME="5X00301G01/5X00327G01"
+         (TYPE="OvationFieldbusPort" NAME="P01"
+          (TYPE="FieldbusDevice" NAME="17ACW_TIT_213"
+           (TYPE="FieldbusAIFunctionBlock" NAME="FFAI275"
+            [FB_FBLOCK_INDEX="1400"
+            FB_FBLOCK_NAME="FFAI275"
+            FB_OUT_REF_NAME="OCB0062016-OUT"
+            FB_ALG_POINT_NAME="OCB0062016"
+            FB_FB_TYPE="FFAI"
+            FFB_SEQ_BEG="1"
+            FB_ALG_START_TIME="120"]
+           )
+          )
+         )
+        )
+       )
+      )
+     )
+    )
+   )
+  )
+ )
+)
+(TYPE="System" NAME="Ovation"
+ (TYPE="Network" NAME="NET0"
+  (TYPE="Unit" NAME="UNIT1"
+   (TYPE="Drop" NAME="DROP1/DROP51"
+    (TYPE="IoDevice" NAME="I/O Device 0 IOIC"
+     (TYPE="IoDevice" NAME="I/O Interface 1 LocalOvation"
+      (TYPE="Branch" NAME="Branch 5"
+       (TYPE="RSlot" NAME="Slot 5"
+        (TYPE="RModule" NAME="5X00301G01/5X00327G01"
+         (TYPE="OvationFieldbusPort" NAME="P01"
+          (TYPE="FieldbusDevice" NAME="17ACW_TIT_213"
+           (TYPE="FieldbusAIFunctionBlock" NAME="FFAI276"
+            [FB_FBLOCK_INDEX="1500"
+            FB_FBLOCK_NAME="FFAI276"
+            FB_OUT_REF_NAME="OCB0062017-OUT"
+            FB_ALG_POINT_NAME="OCB0062017"
+            FB_FB_TYPE="FFAI"
+            FB_ALG_START_TIME="210"]
+           )
+          )
+         )
+        )
+       )
+      )
+     )
+    )
+   )
+  )
+ )
+)
+(TYPE="System" NAME="Ovation"
+ (TYPE="Network" NAME="NET0"
+  (TYPE="Unit" NAME="UNIT1"
+   (TYPE="Drop" NAME="DROP1/DROP51"
+    (TYPE="IoDevice" NAME="I/O Device 0 IOIC"
+     (TYPE="IoDevice" NAME="I/O Interface 1 LocalOvation"
+      (TYPE="Branch" NAME="Branch 5"
+       (TYPE="RSlot" NAME="Slot 5"
+        (TYPE="RModule" NAME="5X00301G01/5X00327G01"
+         (TYPE="OvationFieldbusPort" NAME="P01"
+          (TYPE="FieldbusDevice" NAME="17ACW_TIT_213"
+           (TYPE="FieldbusAIFunctionBlock" NAME="FFAI277"
+            [FB_FBLOCK_INDEX="1600"
+            FB_FBLOCK_NAME="FFAI277"
+            FB_FB_TYPE="FFAI"]
+           )
+          )
+         )
+        )
+       )
+      )
+     )
+    )
+   )
+  )
+ )
+)
+(TYPE="System" NAME="Ovation"
+ (TYPE="Network" NAME="NET0"
+  (TYPE="Unit" NAME="UNIT1"
+   (TYPE="Drop" NAME="DROP1/DROP51"
+    (TYPE="IoDevice" NAME="I/O Device 0 IOIC"
+     (TYPE="IoDevice" NAME="I/O Interface 1 LocalOvation"
+      (TYPE="Branch" NAME="Branch 5"
+       (TYPE="RSlot" NAME="Slot 5"
+        (TYPE="RModule" NAME="5X00301G01/5X00327G01"
+         (TYPE="OvationFieldbusPort" NAME="P01"
+          (TYPE="FieldbusDevice" NAME="17ACW_TIT_213"
+           (TYPE="FieldbusAIFunctionBlock" NAME="FFAI278"
+            [FB_FBLOCK_INDEX="1700"
+            FB_FBLOCK_NAME="FFAI278"
+            FB_FB_TYPE="FFAI"]
+           )
+          )
+         )
+        )
+       )
+      )
+     )
+    )
+   )
+  )
+ )
+)

@@ -16,7 +16,14 @@ excel.Visible = True
 f_path = (os.getcwd() + '\\data\\4-17HPS_LIT_030A.xlsx')
 
 
+
+
+
+
+
+
 addin_path = r'C:\Data\Excel Addins\OvationUtils\Addin\OvationUtils-F07d.xla'
+excel.AddIns.Add(addin_path).Installed = False
 excel.Workbooks.Open(addin_path)
 excel.AddIns.Add(addin_path).Installed = True
 
