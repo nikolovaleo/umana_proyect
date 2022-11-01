@@ -14,31 +14,29 @@ for sheet in names_sheets:
 
 print(fieldbus_sheets)
 
-first_device =  "17HPS_LIT_030A" #fieldbus_device_sheet["ObjectName"][0]
+#first_device =  "17HPS_LIT_030A" #fieldbus_device_sheet["ObjectName"][0]
+FieldbusDevice_sheet = data.parse("FieldbusDevice")
+
+#Ciclo que itera sobre los nombres de los devices 
+for i, device_name in enumerate(FieldbusDevice_sheet["ObjectName"]):
+    #Verifica si device_name esta en la columna de ObjectName en la hoja de FieldbusDevice
+    new1 = data.parse("FieldbusDevice")["ObjectName"].isin([device_name])
+    data1 = data.parse("FieldbusDevice")
+    print(data1[new1])
+    write = pd.ExcelWriter(f'data/{i+1}-{device_name}.xlsx', engine='xlsxwriter')
+    archivo1 = data1[new1]
+    archivo1.to_excel(write, sheet_name="FieldbusDevice", index=False)
 
 
+    for f_sheet in fieldbus_sheets:
+        new2 = data.parse(f_sheet)["ParName_11"].isin([device_name])
+        data2 = data.parse(f_sheet)
+        print(data2[new2])
+        archivo2 = data2[new2]
+    
+        archivo2.to_excel(write, sheet_name = f_sheet, index = False)
 
-new1 = data.parse("FieldbusDevice")["ObjectName"].isin([first_device])
-data1 = data.parse("FieldbusDevice")
-print(data1[new1])
-
-
-write = pd.ExcelWriter(f'{first_device}.xlsx', engine='xlsxwriter')
-
-
-archivo1 = data1[new1]
-archivo1.to_excel(write, sheet_name="FieldbusDevice", index=False)
-
-
-for f_sheet in fieldbus_sheets:
-    new2 = data.parse(f_sheet)["ParName_11"].isin([first_device])
-    data2 = data.parse(f_sheet)
-    print(data2[new2])
-    archivo2 = data2[new2]
-   
-    archivo2.to_excel(write, sheet_name = f_sheet, index = False)
-
-write.save()
+    write.save()
 
 #column_names = []
 #for sheet in fieldbus_names:
