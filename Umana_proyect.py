@@ -1,6 +1,6 @@
 import pandas as pd 
-from xlsxwriter import Workbook
-import openpyxl
+#from xlsxwriter import Workbook
+#import openpyxl
 file = "test.xlsx" 
 data = pd.ExcelFile(file)
 fieldbus_device_sheet = data.parse("FieldbusDevice")
@@ -18,25 +18,27 @@ first_device =  "17HPS_LIT_030A" #fieldbus_device_sheet["ObjectName"][0]
 
 
 
-new = data.parse("FieldbusDevice")["ObjectName"].isin([first_device])
+new1 = data.parse("FieldbusDevice")["ObjectName"].isin([first_device])
 data1 = data.parse("FieldbusDevice")
-print(data1[new])
+print(data1[new1])
 
 
-archivo = data1[new]
-archivo.to_excel(f'{first_device}.xlsx', sheet_name="FieldbusDevice")
+write = pd.ExcelWriter(f'{first_device}.xlsx', engine='xlsxwriter')
+
+
+archivo1 = data1[new1]
+archivo1.to_excel(write, sheet_name="FieldbusDevice")
 
 
 for f_sheet in fieldbus_sheets:
     new2 = data.parse(f_sheet)["ParName_11"].isin([first_device])
     data2 = data.parse(f_sheet)
     print(data2[new2])
-    archivo2 = data1[new]
-    write = pd.ExcelWriter(f'{first_device}.xlsx', engine='openpyxl' ,mode= "a")
+    archivo2 = data2[new2]
+   
     archivo2.to_excel(write, sheet_name = f_sheet, index = False)
-    #archivo2.to_excel(f'{first_device}.xlsx', sheet_name = f_sheet, index = False)
 
-
+write.save()
 
 #column_names = []
 #for sheet in fieldbus_names:
